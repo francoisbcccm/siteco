@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services pour les Collectivités</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            color: #333;
+            background-color: #fdfdfd;
+        }
+        header {
+            background: url('photo1_collectivite.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 4rem;
+            text-align: center;
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 4rem;
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 2s ease-in-out;
+        }
+        header p {
+            font-size: 1.5rem;
+            font-family: 'Lora', serif;
+            margin-top: 1rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        nav {
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+        nav a {
+            display: inline-block;
+            margin: 0;
+            padding: 0.5rem 1rem;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1.5s ease-in-out;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        .image-frame {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .image-frame img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .press-button {
+            display: block;
+            margin: 1.5rem auto;
+            padding: 0.8rem 1.5rem;
+            background: #ffb400;
+            color: #333;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            max-width: 250px;
+        }
+        .press-button:hover {
+            background: #e09e00;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #1a1a1a;
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pour les Collectivités</h1>
+        <p>Solutions pour transformer l'habitat insalubre et valoriser les bureaux disponibles</p>
+        <nav>
+            <a href="index.html">Retour à l'accueil</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section>
+            <h2>L'enjeu des bureaux vacants à Marseille</h2>
+            <p>À Marseille, des milliers de mètres carrés de bureaux restent vacants, représentant une opportunité unique de les transformer en logements. Cette transformation peut répondre à la demande croissante en habitat, tout en réduisant les espaces inutilisés dans la ville.</p>
+            <p>Nous évaluons précisément les mètres carrés disponibles et collaborons avec les municipalités pour structurer des projets viables économiquement et socialement.</p>
+            <a class="press-button" href="https://www.bfmtv.com/immobilier/immobilier-deux-millions-de-metres-carres-de-bureaux-a-transformer-en-logement-en-france_AD-202412090151.html" target="_blank">La presse en parle</a>
+        </section>
+        <section>
+            <h2>Réduire l'habitat insalubre</h2>
+            <p>L'habitat insalubre est un défi majeur pour les collectivités. Nous apportons notre expertise pour :</p>
+            <ul>
+                <li>Identifier et prioriser les zones nécessitant une intervention urgente.</li>
+                <li>Développer des stratégies de rénovation ou de reconstruction.</li>
+                <li>Maximiser l'utilisation des ressources pour créer des logements de qualité.</li>
+            </ul>
+            <a class="press-button" href="https://www.youtube.com/watch?v=7lDAeCAVsZY" target="_blank">La presse en parle</a>
+        </section>
+        <section>
+            <h2>Comment BCCCM peut vous accompagner ?</h2>
+            <p>Notre équipe propose :</p>
+            <ul>
+                <li>Une analyse approfondie des biens disponibles.</li>
+                <li>Une estimation réaliste des coûts et des revenus potentiels après transformation.</li>
+                <li>Un accompagnement dans la communication pour valoriser ces projets auprès des investisseurs et citoyens.</li>
+            </ul>
+        </section>
+        <div class="image-frame">
+            <img src="photo2_collectivite.jpeg" alt="Exemple de transformation de bureaux en logements">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 BCCCM. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

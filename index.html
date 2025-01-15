@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCCCM - Accueil</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            color: #333;
+            background-color: #fdfdfd;
+        }
+        header {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+        }
+        .slideshow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .slideshow img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: fade 20s infinite;
+        }
+        .slideshow img:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .slideshow img:nth-child(2) {
+            animation-delay: 5s;
+        }
+        .slideshow img:nth-child(3) {
+            animation-delay: 10s;
+        }
+        .slideshow img:nth-child(4) {
+            animation-delay: 15s;
+        }
+        @keyframes fade {
+            0%, 100% {
+                opacity: 0;
+            }
+            25%, 75% {
+                opacity: 1;
+            }
+        }
+        header h1 {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            font-size: 4rem;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding-top: 150px;
+        }
+        header p {
+            position: relative;
+            z-index: 2;
+            font-size: 1.5rem;
+            color: #fff;
+            font-family: 'Lora', serif;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 3;
+        }
+        .logo img {
+            width: 250px;
+            height: auto;
+        }
+        nav {
+            background: #222;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        .service {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .service h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        .service p {
+            font-size: 1rem;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background: #1a1a1a;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="slideshow">
+            <img src="photo1_professionnels.jpg" alt="Photo Professionnels">
+            <img src="photo1_particulier.jpg" alt="Photo Particuliers">
+            <img src="photo1_collectivite.jpg" alt="Photo Collectivités">
+            <img src="photo2_professionnels.jpg" alt="Autre Photo Professionnels">
+        </div>
+        <div class="logo">
+            <img src="logo.gif" alt="Logo BCCCM">
+        </div>
+        <h1>BCCCM</h1>
+        <p>Votre partenaire pour des projets immobiliers innovants</p>
+    </header>
+    <nav>
+        <a href="services_professionnels.html">Professionnels</a>
+        <a href="services_particuliers.html">Particuliers</a>
+        <a href="services_collectivites.html">Collectivités</a>
+        <a href="rendez_vous.html">Prendre Rendez-vous</a>
+    </nav>
+    <div class="container">
+        <h2>Bienvenue sur BCCCM</h2>
+        <p>Nous sommes spécialisés dans l'accompagnement des professionnels, des particuliers et des collectivités pour concrétiser leurs projets immobiliers et transformer leur vision en réalité.</p>
+        <div class="services">
+            <div class="service">
+                <h3>Professionnels</h3>
+                <p>Des solutions pour structurer et développer votre force commerciale.</p>
+            </div>
+            <div class="service">
+                <h3>Particuliers</h3>
+                <p>Un accompagnement personnalisé pour concrétiser vos projets immobiliers.</p>
+            </div>
+            <div class="service">
+                <h3>Collectivités</h3>
+                <p>Des stratégies pour valoriser l'habitat insalubre et les bureaux vacants.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Adresse : 60 avenue François 1er, 75008 Paris | Email : <a href="mailto:fdmp77@gmail.com">fdmp77@gmail.com</a> | Téléphone : <a href="tel:0645975984">06 45 97 59 84</a></p>
+        <p>&copy; 2025 BCCCM. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
